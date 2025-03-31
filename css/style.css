@@ -565,3 +565,94 @@
 
 /* parte final */
 
+/* FAQ Section - Tema Claro */
+.faq {
+  padding: 60px 20px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.faq details {
+  background: #f9f9f9;
+  border: 1px solid #ffcc00;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 15px 20px;
+  max-width: 700px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.faq summary {
+  font-weight: 600;
+  color: #ffcc00;
+  cursor: pointer;
+  outline: none;
+}
+
+.faq details[open] summary {
+  margin-bottom: 10px;
+}
+
+.faq p {
+  margin-top: 10px;
+  color: #444;
+  font-size: 14px;
+}
+
+/* Footer - Tema Claro */
+.footer {
+  background: #f2f2f2;
+  color: #111;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer .logo img {
+  width: 140px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+.footer-columns h4 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.footer-columns p {
+  margin: 5px 0;
+  color: #555;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-columns {
+    flex-direction: row;
+    text-align: left;
+    gap: 60px;
+  }
+}
