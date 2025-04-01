@@ -71,6 +71,7 @@
   }
   
   .hero-content .image img {
+    margin-top: -2rem;
     width: 100%; /* Faz a imagem se ajustar ao tamanho máximo */
     height: auto;
   }
@@ -187,7 +188,7 @@
   
   .hero-content .text p {
     color: #444;
-    margin-top: 20px;
+    margin-top: 10px;
     line-height: 1.6;
   }
   
