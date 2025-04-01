@@ -30,29 +30,48 @@
     font-weight: 600;
   }
   .hero {
-    padding: 60px 20px;
-    background: #fff;
-    color: #111;
-  }
-
-  .hero-content {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 40px;
+    padding: 50px 20px;
+    max-width: 1200px; /* Limite de largura */
+    margin: 0 auto; /* Centraliza a seção */
+    flex-direction: column;
   }
   
-  .hero h1 {
-    font-size: 24px;
-    color: #fff;
+  .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%; /* Certifique-se de que a largura total seja ocupada */
   }
-  .hero h1 span {
-    color: #ffcc00;
+  
+  .hero-content .text {
+    max-width: 600px; /* Define um limite de largura para o texto */
   }
-  .hero p {
-    color: #aaa;
-    margin: 20px auto;
-    max-width: 600px;
+  
+  .hero-content .image {
+    max-width: 500px; /* Limita o tamanho da imagem */
+  }
+  
+  .hero-content .text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.3;
+  }
+  
+  .hero-content .text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .hero-content .image img {
+    width: 100%; /* Faz a imagem se ajustar ao tamanho máximo */
+    height: auto;
   }
   .section {
     padding: 40px 20px;
@@ -259,7 +278,7 @@
 .benefits {
   background-color: #fff;
   color: #000;
-  padding: 50px 20px;
+  padding: 0px 20px;
   text-align: center;
 }
 
@@ -305,7 +324,7 @@
 }
 
 .cta-bottom {
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -322,7 +341,7 @@
 .offers {
   background: #fff;
   color: #000;
-  padding: 60px 20px;
+  padding: 0px 20px;
   text-align: center;
 }
 
@@ -416,20 +435,81 @@
 }
 
 .ingredients-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
-  font-size: 0.95rem;
-  font-weight: 500;
+  background-color: white; /* Fundo branco */
+  padding: 30px 15px; /* Espaçamento nas laterais */
+  text-align: center;
 }
 
-.ingredients-footer img {
-  width: 18px;
-  margin-right: 6px;
-  vertical-align: middle;
+.ingredients-footer h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
 }
+
+.ingredients-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.ingredients-list p {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  justify-content: center;
+}
+
+.ingredients-list img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.shipping-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.shipping-banner img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.shipping-text {
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .ingredients-footer h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .ingredients-list {
+    flex-direction: row; /* Coloca os itens lado a lado */
+    justify-content: center; /* Centraliza os itens no mobile */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .ingredients-list p {
+    font-size: 16px;
+    margin-bottom: 10px; /* Ajusta o espaçamento entre os itens */
+  }
+
+  .shipping-banner {
+    padding: 15px;
+  }
+}
+
 
 
 
@@ -440,12 +520,11 @@
 
 .results {
   background: #fff;
-  padding: 60px 20px;
+  padding: 0px 20px;
   text-align: center;
 }
 
 .shipping-banner {
-  background: #000;
   color: #ffd000;
   padding: 20px;
   border-radius: 16px;
@@ -456,11 +535,10 @@
   flex-wrap: wrap;
   max-width: 800px;
   margin: 0 auto 50px auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .shipping-banner img {
-  width: 80%;
+  width: 100%;
 }
 
 .shipping-banner .shipping-text {
@@ -499,44 +577,58 @@
 
 /* Garantia - fundo amarelo */
 .guarantee {
-  background: linear-gradient(to right, #ffd700, #ffcc00);
+  margin-top: 3rem;
+  background-color: #FFD700; /* Fundo amarelo */
   padding: 40px 20px;
-  color: #000;
-  text-align: left;
+  text-align: center;
 }
 
 .guarantee-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  background-color: #FFD700; /* Fundo amarelo, removendo o branco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor da caixa */
 }
 
-.guarantee-box img {
-  width: 120px;
+.guarantee-image {
+  width: 25%; /* Tamanho da imagem */
+  margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.guarantee-text {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  max-width: 600px; /* Limita a largura do texto */
 }
 
 .guarantee-text h3 {
-  font-size: 20px;
+  font-size: 24px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
 .guarantee-text p {
-  margin-top: 10px;
-  color: #222;
-  max-width: 600px;
-  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 0;
 }
 
-@media(min-width: 768px) {
+@media (max-width: 768px) {
   .guarantee-box {
-    flex-direction: row;
-    justify-content: center;
-    text-align: left;
+    flex-direction: column; /* Mantém a disposição horizontal no mobile */
+    padding: 10px; /* Ajusta o padding para o mobile */
   }
 
-  .guarantee-text p {
-    text-align: left;
+  .guarantee-image {
+    width: 40%; /* Tamanho da imagem */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+  }
+
+  .guarantee-text {
+    font-size: 14px; /* Ajusta o tamanho do texto no mobile */
   }
 }
 
