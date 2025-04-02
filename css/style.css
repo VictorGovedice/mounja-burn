@@ -7,8 +7,12 @@
   body {
     background-color: #fff;
     color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   header {
+    max-width: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,7 +71,7 @@
     font-size: 18px;
     line-height: 1.3;
     color: #555;
-    font-size: 11px !important;
+    font-size: 23px !important;
   }
   
   .hero-content .image img {
@@ -85,7 +89,6 @@
   .benefits {
     background-color: #111;
     margin: 20px auto;
-    max-width: 600px;
     padding: 20px;
     border-radius: 10px;
     text-align: left;
@@ -177,7 +180,7 @@
   }
   
   .hero-content .text h1 {
-    font-size: 32px;
+    font-size: 39px;
     font-weight: bold;
     line-height: 1.4;
   }
@@ -206,7 +209,7 @@
   }
   
   .seals img {
-    height: 60px;
+    height: 120px;
   }
 
 /* Header base */
@@ -286,12 +289,12 @@
 }
 
 .benefits h2 {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   margin-bottom: 30px;
 }
 
 .benefits h2 span {
-  color: #d9aa00; /* amarelo mais forte pra bom contraste */
+  color: #642d91; /* amarelo mais forte pra bom contraste */
   font-weight: 700;
 }
 
@@ -314,7 +317,7 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   color: #000;
 }
@@ -328,12 +331,12 @@
 
 .cta-bottom {
   margin-top: 30px;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .cta-bottom span {
-  color: #d9aa00;
+  color: #642d91;
 }
 
 /* beneficios fim */
@@ -352,7 +355,7 @@
   background: #ffd000;
   padding: 10px 20px;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 2rem;
   display: inline-block;
   margin-bottom: 40px;
   border-radius: 8px;
@@ -377,7 +380,7 @@
 
 .card.featured {
   transform: scale(1.05);
-  border: 2px solid #ffd000;
+  border: 2px solid #642d91;
 }
 
 .card img {
@@ -444,7 +447,7 @@
 }
 
 .ingredients-footer h2 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   color: #000;
   margin-bottom: 20px;
@@ -461,7 +464,7 @@
 .ingredients-list p {
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 25px;
   justify-content: center;
 }
 
@@ -545,6 +548,7 @@
 }
 
 .photo-grid {
+  padding-top: 2rm;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 20px;
@@ -582,7 +586,6 @@
   background-color: #FFD700; /* Fundo amarelo, removendo o branco */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor da caixa */
 }
 
 .guarantee-image {
@@ -597,13 +600,13 @@
 }
 
 .guarantee-text h3 {
-  font-size: 24px;
+  font-size: 27px;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 .guarantee-text p {
-  font-size: 16px;
+  font-size: 25px;
   line-height: 1.5;
   margin-top: 0;
 }
@@ -651,6 +654,7 @@
 
 /* FAQ Section - Tema Claro */
 .faq {
+  font-size: 1.5rem;
   padding: 60px 20px;
   background-color: #fff;
   color: #000;
@@ -658,7 +662,7 @@
 }
 
 .faq h2 {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 30px;
   color: #000;
 }
@@ -688,7 +692,7 @@
 .faq p {
   margin-top: 10px;
   color: #444;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 /* Footer - Tema Claro */
