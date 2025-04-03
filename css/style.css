@@ -76,7 +76,6 @@ nav a {
 
 .hero-content .image img {
   margin-top: -2rem;
-  width: 100%; /* Faz a imagem se ajustar ao tamanho máximo */
   height: auto;
 }
 .section {
