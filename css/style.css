@@ -295,6 +295,22 @@ display: none;
   font-size: 16px !important;  
 }
 
+.benefits h2 {
+  font-size: 23px !important;
+}
+
+.benefit-box li{
+  font-size: 17px !important;
+}
+
+.cta-bottom{
+  font-size: 23px !important;
+}
+
+.faq h2{
+  font-size: 23px !important;
+}
+
 }
 
 /* beneficios inicio */
